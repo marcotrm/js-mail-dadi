@@ -8,3 +8,28 @@
 // - find
 // - search
 // - ecc...
+
+// Lista di email
+const emails = ["marco@example.com", "fede@example.com", "franco@example.com"];
+
+// Chiedi l'email all'utente
+const userEmail = prompt("Inserisci la tua email:");
+
+let autorize = false;
+
+// ciclo per il controllo
+for (let i = 0; i < emails.length; i++) {
+    if (emails[i] === userEmail) {
+        autorize = true;
+    }
+}
+
+// alert in base al risultato
+if (autorize) {
+    alert("Benvenuto!");
+    console.log("Benvenuto!");
+
+} else {
+    alert("AL'email non è nella lista.");
+    console.log("L'email non è nella lista.");
+}
